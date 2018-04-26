@@ -71,21 +71,21 @@ x_output_val_hist = []
 t_input_val = np.linspace(0., 1., num_nodes)
 max_epoch = 100000
 cnt = 0
-z_input_val = np.random.randn(batch_size, 1)
+z_input_val_fix = np.random.randn(batch_size, 1)
 for ep_i in np.linspace(0., 1., max_epoch):
     cnt += 1
-    if cnt%1000 == 0:
+    if cnt%10000 == 0:
         z_input_val = np.random.randn(batch_size, 1)
     # np.asarray(16 * [[0., ]], dtype='float32')
-    if cnt/1000 < 0.1:
+    if cnt/10000 < 0.1:
         w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
-    elif cnt/1000 < 0.4:
-        w_input_val = [30, 10, 30, 1.5, 10., 0.]  # height, bottom, area, curvature, edge, stability
-    elif cnt/1000 < 0.8:
-        w_input_val = [30, 10, 30, 1.5, 10., 2]  # height, bottom, area, curvature, edge, stability
+    elif cnt/10000 < 0.4:
+        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+    elif cnt/10000 < 0.8:
+        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     else:
-        w_input_val = [30, 10, 30, 1.5, 10., 2]  # height, bottom, area, curvature, edge, stability
-    feed_dict = {z_input: z_input_val,
+        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+    feed_dict = {z_input: z_input_val_fix,
                  t_input: np.tile(t_input_val,(batch_size,1)),
                  w_input: w_input_val}
     x_output_val, loss_val, _ = sess.run([x_output, total_loss, apply_gradient_op], feed_dict)

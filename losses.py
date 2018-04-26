@@ -55,13 +55,15 @@ def get_loss_stability(input_tensor):
     padding = tf.zeros((bs,1))
     v = tf.concat([center,padding],1) - tf.concat([input_tensor,padding],1)
     area_path = tf.cross(v[1:], v[:-1])[:,2] / 2.
-    center_patch = input_tensor[:-1,0]+input_tensor[1:,0]+0.5
+    center_patch = (input_tensor[:-1,0]+input_tensor[1:,0]+0.5 )/3.
     center_gravity = tf.reduce_mean(center_patch * area_path) / tf.reduce_mean(area_path)
 
     length = input_tensor.get_shape().as_list()[0]
     bottom_left = tf.reduce_mean(input_tensor[int(length * 0.35):int(length * 0.45), 0])
     bottom_right = tf.reduce_mean(input_tensor[int(length * 0.55):int(length * 0.65), 0])
-    loss_stability = tf.reduce_mean(tf.nn.relu(bottom_left-center_gravity) + tf.nn.relu(center_gravity-bottom_right))
+    loss_stability_case1 = tf.reduce_mean(tf.nn.relu(bottom_left-center_gravity) + tf.nn.relu(center_gravity-bottom_right))
+    loss_stability_case2 = tf.reduce_mean(tf.nn.relu(bottom_right-center_gravity) + tf.nn.relu(center_gravity-bottom_left))
+    loss_stability = tf.reduce_min([loss_stability_case1, loss_stability_case2])
     log_res = {}
     log_res['center'], log_res['left'], log_res['right'] = center_gravity, bottom_left, bottom_right
     return loss_stability, log_res
