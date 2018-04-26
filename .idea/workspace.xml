@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1559354c-22b8-46d4-9147-d0124a7ff9d7" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="generator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainer_new.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trainer_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="36">
+                <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="op_def_library.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13572">
+              <caret line="771" column="0" lean-forward="false" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contextlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/contextlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/update.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="losses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/losses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_shapes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11952">
+              <caret line="677" column="0" lean-forward="false" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17748">
+              <caret line="1003" column="0" lean-forward="false" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>32</find>
+      <find>x_output_val_hist</find>
+      <find>batch_size</find>
+      <find>t_input</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/update.py" />
+        <option value="$PROJECT_DIR$/trainer.py" />
+        <option value="$PROJECT_DIR$/generator.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/losses.py" />
+        <option value="$PROJECT_DIR$/trainer_new.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cup_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cup_generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MG_net" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.trainer_new">
+    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cup_generator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trainer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cup_generator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trainer_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cup_generator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer_new.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.generator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.trainer" />
+      <item index="2" class="java.lang.String" itemvalue="Python.trainer_new" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.trainer_new" />
+        <item index="1" class="java.lang.String" itemvalue="Python.trainer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1559354c-22b8-46d4-9147-d0124a7ff9d7" name="Default" comment="" />
+      <created>1524180955468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524180955468</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1590164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39874083" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36306402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1997" y="360" width="1830" height="356" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/generator.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trainer.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trainer_new.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="40" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+
+feed_dict = {z_input: np.random.randn(batch_size, 1),
+             t_input: np.tile(t_input_val, (batch_size, 1)),
+             w_input: w_input_val}
+x_output_val, loss_val = sess.run([x_output, total_loss], feed_dict)
+
+# plt.figure()
+bs_i = 10
+plt.plot(np.asarray(x_output_val)[bs_i, :, 0], np.asarray(x_output_val)[bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val)[bs_i, :, 0], np.asarray(x_output_val)[bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val)[bs_i, 0, 0], np.asarray(x_output_val)[bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val)[bs_i, -1, 0], np.asarray(x_output_val)[bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+
+feed_dict = {z_input: np.random.randn(batch_size, 1),
+             t_input: np.tile(t_input_val, (batch_size, 1)),
+             w_input: w_input_val}
+x_output_val, loss_val = sess.run([x_output, total_loss], feed_dict)
+
+plt.figure()
+bs_i = 10
+plt.plot(np.asarray(x_output_val)[bs_i, :, 0], np.asarray(x_output_val)[bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val)[bs_i, :, 0], np.asarray(x_output_val)[bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val)[bs_i, 0, 0], np.asarray(x_output_val)[bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val)[bs_i, -1, 0], np.asarray(x_output_val)[bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 1000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 3000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 4000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 7000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 6000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 5000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>import matplotlib.pyplot as plt
+import seaborn
+plt.figure()
+idx = 10000
+bs_i = 0
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],'b.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')
+ax2 = ax1.twinx()
+ax2.plot(loss_curvature_val_hist,'k')
+ax2.plot(loss_edge_val_hist,'c')
+ax2.plot(loss_stability_val_hist,'y')
+ax2.set_ylabel('curvature_stability', color='y')
+ax2.tick_params('y', colors='y')
+ax2.grid('off')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13572">
+          <caret line="771" column="0" lean-forward="false" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/contextlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11952">
+          <caret line="677" column="0" lean-forward="false" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17748">
+          <caret line="1003" column="0" lean-forward="false" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13572">
+          <caret line="771" column="0" lean-forward="false" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/contextlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11952">
+          <caret line="677" column="0" lean-forward="false" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17748">
+          <caret line="1003" column="0" lean-forward="false" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42966">
+          <caret line="2415" column="0" lean-forward="false" selection-start-line="2415" selection-start-column="0" selection-end-line="2415" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8190">
+          <caret line="469" column="0" lean-forward="false" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/linalg_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7848">
+          <caret line="453" column="15" lean-forward="false" selection-start-line="453" selection-start-column="10" selection-end-line="453" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11916">
+          <caret line="675" column="0" lean-forward="false" selection-start-line="675" selection-start-column="0" selection-end-line="675" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17748">
+          <caret line="1003" column="0" lean-forward="false" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19278">
+          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="793" column="0" lean-forward="false" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/tensor_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/348993582/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="2083" column="15" lean-forward="false" selection-start-line="2083" selection-start-column="0" selection-end-line="2084" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/python/training/adam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/linalg_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7848">
+          <caret line="453" column="15" lean-forward="false" selection-start-line="453" selection-start-column="10" selection-end-line="453" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/gen_math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="1225" column="40" lean-forward="true" selection-start-line="1225" selection-start-column="40" selection-end-line="1225" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8190">
+          <caret line="469" column="0" lean-forward="false" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="2404" column="0" lean-forward="false" selection-start-line="2404" selection-start-column="0" selection-end-line="2404" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/tensorflow/python/pywrap_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/contextlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13572">
+          <caret line="771" column="0" lean-forward="false" selection-start-line="771" selection-start-column="0" selection-end-line="771" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11952">
+          <caret line="677" column="0" lean-forward="false" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17748">
+          <caret line="1003" column="0" lean-forward="false" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
