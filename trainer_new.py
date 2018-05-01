@@ -3,14 +3,14 @@ from generator import build_generator_new, new_variables
 from losses import *
 import numpy as np
 
-num_nodes = 128
+num_nodes = 16
 batch_size = 16
-z_dim = 1
+z_dim = 4
 t_dim = 1
 z_input = tf.placeholder(tf.float32, shape=([batch_size, z_dim]))
 t_input = tf.placeholder(tf.float32, shape=([batch_size, num_nodes*t_dim]))
 
-WB = new_variables(z_input, t_input)
+WB = new_variables(z_dim, t_dim)
 x_output_i = build_generator_new(z_input, t_input[:,0:1], WB)
 x_output = tf.expand_dims(x_output_i,1)
 for i in range(1,num_nodes,1):
@@ -44,7 +44,7 @@ total_loss = w_input[0]*loss['height'] \
              + w_input[4]*loss['edge']\
              + w_input[5] * loss['stability']
 
-opt = tf.train.AdamOptimizer(0.001)
+opt = tf.train.AdamOptimizer(0.0001)
 grads_g = opt.compute_gradients(total_loss)
 apply_gradient_op = opt.apply_gradients(grads_g)
 
@@ -71,26 +71,31 @@ x_output_val_hist = []
 t_input_val = np.linspace(0., 1., num_nodes)
 max_epoch = 100000
 cnt = 0
-z_input_val_fix = np.random.randn(batch_size, 1)
+z_input_val_fix = np.random.randn(batch_size, z_dim)
+feed_dict_fix = {z_input: z_input_val_fix,
+             t_input: np.tile(t_input_val, (batch_size, 1))}
 for ep_i in np.linspace(0., 1., max_epoch):
+    if cnt%1000 == 0:
+        z_input_val = np.random.randn(batch_size, z_dim)
     cnt += 1
-    if cnt%10000 == 0:
-        z_input_val = np.random.randn(batch_size, 1)
     # np.asarray(16 * [[0., ]], dtype='float32')
-    if cnt/10000 < 0.1:
+    if cnt/1000 < 0.1:
         w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
-    elif cnt/10000 < 0.4:
+    elif cnt/1000 < 0.4:
         w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
-    elif cnt/10000 < 0.8:
+    elif cnt/1000 < 0.8:
         w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     else:
         w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
-    feed_dict = {z_input: z_input_val_fix,
+    feed_dict = {z_input: z_input_val,
                  t_input: np.tile(t_input_val,(batch_size,1)),
                  w_input: w_input_val}
-    x_output_val, loss_val, _ = sess.run([x_output, total_loss, apply_gradient_op], feed_dict)
+    loss_val, _ = sess.run([total_loss, apply_gradient_op], feed_dict)
     total_loss_val_hist += [loss_val]
+
+    x_output_val = sess.run(x_output, feed_dict_fix)
     x_output_val_hist += [x_output_val]
+
 
     loss_val, center_gravity_val = sess.run([loss, center_gravity], feed_dict)
     loss_curvature_val_hist += [loss_val['curvature']]

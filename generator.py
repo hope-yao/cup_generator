@@ -8,12 +8,9 @@ def xavier_init(size):
     xavier_stddev = 1. / tf.sqrt(in_dim / 2.)
     return tf.random_normal(shape=size, stddev=xavier_stddev)
 
-def new_variables(z_input, t_input):
+def new_variables(z_dim, t_dim):
     h_dim_1,h_dim_2,h_dim_3,h_dim_4,h_dim_5=10,10,10,10,10
     X_dim = 2
-    r=4
-    z_dim = 1
-    t_dim = 1
 
     W1 = tf.Variable(xavier_init([z_dim+t_dim, h_dim_1]))
     b1 = tf.Variable(tf.zeros(shape=[h_dim_1]))
