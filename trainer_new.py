@@ -5,7 +5,7 @@ import numpy as np
 
 num_nodes = 16
 batch_size = 16
-z_dim = 4
+z_dim = 1
 t_dim = 1
 z_input = tf.placeholder(tf.float32, shape=([batch_size, z_dim]))
 t_input = tf.placeholder(tf.float32, shape=([batch_size, num_nodes*t_dim]))
@@ -80,13 +80,13 @@ for ep_i in np.linspace(0., 1., max_epoch):
     cnt += 1
     # np.asarray(16 * [[0., ]], dtype='float32')
     if cnt/1000 < 0.1:
-        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+        w_input_val = [30, 10, 0, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     elif cnt/1000 < 0.4:
-        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+        w_input_val = [30, 10, 0, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     elif cnt/1000 < 0.8:
-        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+        w_input_val = [30, 10, 0, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     else:
-        w_input_val = [30, 10, 30, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
+        w_input_val = [30, 10, 0, 0., 0.,  0.]  # height, bottom, area, curvature, edge, stability
     feed_dict = {z_input: z_input_val,
                  t_input: np.tile(t_input_val,(batch_size,1)),
                  w_input: w_input_val}

@@ -1,6 +1,6 @@
 import tensorflow as tf
 from generator import build_generator_new_new, new_variables
-from losses_new_new import *
+from losses import *
 import numpy as np
 
 num_nodes = 16
@@ -31,9 +31,9 @@ loss['stability'] = tf.constant(0.)
 for i in range(batch_size):
     loss['height'] += get_loss_at_top(x_output[i], top_height)/batch_size
     loss['bottom'] += get_loss_flat_bottom(x_output[i])/batch_size
-    loss_area, area  = get_loss_area(x_output[i], open_flg)
+    loss_area  = get_loss_area(x_output[i])
     loss['area'] += loss_area /batch_size
-    loss['range'] += get_loss_range(x_output[i], open_flg) /batch_size
+    loss['range'] += tf.constant(0.) /batch_size
     # loss['curvature'] += get_loss_curvature_vs_length(x_output[i]) /batch_size
     # loss['edge'] += get_loss_sharp_edge(x_output[i]) /batch_size
     loss_stability, center_gravity = get_loss_stability(x_output[i])

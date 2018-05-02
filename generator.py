@@ -8,9 +8,9 @@ def xavier_init(size):
     xavier_stddev = 1. / tf.sqrt(in_dim / 2.)
     return tf.random_normal(shape=size, stddev=xavier_stddev)
 
-def new_variables(z_dim, t_dim):
+def new_variables(z_dim, t_dim, X_dim = 2):
     h_dim_1,h_dim_2,h_dim_3,h_dim_4,h_dim_5=10,10,10,10,10
-    X_dim = 2
+
 
     W1 = tf.Variable(xavier_init([z_dim+t_dim, h_dim_1]))
     b1 = tf.Variable(tf.zeros(shape=[h_dim_1]))
@@ -49,6 +49,21 @@ def build_generator_new(z_input,t_input, WB):
 
     return x_output
 
+def build_generator_new_new(z_input,t_input, WB):
+    '''x,y position and state'''
+
+    W1, W2, W3, W4, W5, W6 = WB['W1'], WB['W2'], WB['W3'], WB['W4'], WB['W5'], WB['W6']
+    b1, b2, b3, b4, b5, b6 = WB['b1'], WB['b2'], WB['b3'], WB['b4'], WB['b5'], WB['b6']
+
+    h1 = tf.nn.relu(tf.matmul(tf.concat([z_input,t_input],1), W1) + b1)
+    h2 = tf.nn.relu(tf.matmul(h1, W2) + b2)
+    h3 = tf.nn.relu(tf.matmul(h2, W3) + b3)
+    h4 = tf.nn.relu(tf.matmul(h3, W4) + b4)
+    h5 = tf.nn.relu(tf.matmul(h4, W5) + b5)
+    x_output = tf.nn.sigmoid(tf.matmul(h5, W6) + b6)[:,:2]
+    open_flg = tf.nn.sigmoid(tf.matmul(h5, W6) + b6)[:,2:]
+
+    return tf.concat([x_output, open_flg],1)
 
 def build_generator(z_input,t_input):
     h_dim_1,h_dim_2,h_dim_3,h_dim_4,h_dim_5=10,10,10,10,10

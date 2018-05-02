@@ -2,10 +2,11 @@ import tensorflow as tf
 
 
 def get_loss_at_top(input_tensor, hight):
-    loss_left = (hight - input_tensor[0,1])*(hight - input_tensor[0,1])
-    loss_right = (hight - input_tensor[-1,1])*(hight - input_tensor[-1,1])
-    # loss_mid = tf.nn.relu(-input_tensor[0,0] + 0.5) + tf.nn.relu(-0.5 + input_tensor[-1,0])
-    return loss_left + loss_right #+ loss_mid
+    loss_left = tf.abs(hight - input_tensor[0,1])
+    loss_right = tf.abs(hight - input_tensor[-1,1])
+    length = input_tensor.get_shape().as_list()[0]
+    loss_mid = tf.nn.relu(tf.reduce_mean(input_tensor[:int(length * 0.5),0])-tf.reduce_mean(input_tensor[int(length * 0.5):,0]))
+    return loss_left + loss_right + loss_mid
 
 def get_loss_curvature(input_tensor):
     v1 = input_tensor[1:-1] - input_tensor[:-2]
@@ -21,15 +22,40 @@ def get_loss_flat_bottom(input_tensor):
     loss_bottom = tf.reduce_max(tf.nn.relu( 0.2 - input_tensor[:,1]))
     return loss_flat_bottom + loss_bottom
 
-def get_loss_area(input_tensor):
-    bs = input_tensor.get_shape().as_list()[0]
+def get_loss_area(input_tensor, open_flg):
+    '''only area below the opening'''
     import numpy as np
-    center = np.asarray(bs * [[0.5, 0.8]])
+    bs = input_tensor.get_shape().as_list()[0]
+    level = tf.reduce_min((0.001+open_flg)*input_tensor[:, 1])
+    below_level = tf.sigmoid(level - input_tensor[:, 1])
+
+    center = tf.tile(tf.expand_dims(tf.stack([tf.constant(0.5),level]),0),(bs,1))
     padding = tf.zeros((bs,1))
     v = tf.concat([center,padding],1) - tf.concat([input_tensor,padding],1)
-    area = tf.reduce_sum(tf.cross(v[1:], v[:-1])[:,2] / 2.)
+    area_i = tf.cross(v[1:], v[:-1])[:, 2] / 2.
+    area_i = (tf.concat([area_i, [0]], 0) + tf.concat([[0], area_i], 0)) / 2 #average area on every node
+    area = tf.reduce_mean(below_level * area_i)
+
     loss_area = tf.abs(area-0.3)
-    return loss_area
+    return loss_area, area
+
+def get_loss_range(input_tensor, open_flg):
+    num_pt = input_tensor.get_shape().as_list()[0]
+    import numpy as np
+    center = np.asarray(num_pt * [[0.5, 0.8]])
+    padding = tf.zeros((num_pt,1))
+    v = tf.concat([center,padding],1) - tf.concat([input_tensor,padding],1)
+    area_path = tf.cross(v[1:], v[:-1])[:,2] / 2.
+    center_patch = (input_tensor[:-1,0]+input_tensor[1:,0]+0.5 )/3.
+    center_gravity = tf.reduce_mean(center_patch * area_path) / tf.reduce_mean(area_path)
+
+    import numpy as np
+    bs = input_tensor.get_shape().as_list()[0]
+    left_open_loc= tf.reduce_mean((1-open_flg)*input_tensor[:, 0])
+    range = center_gravity - left_open_loc
+
+    loss_range = tf.abs(range-0.3)
+    return loss_range
 
 def get_loss_curvature_vs_length(input_tensor):
     '''larger curvature region needs shorter lines'''
