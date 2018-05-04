@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import seaborn
+# plt.figure()
+curve = sess.run(x_output, feed_dict)[0]
+z_input_val = np.random.randn(batch_size, z_dim)
+feed_dict = {z_input: z_input_val,
+             t_input: np.tile(t_input_val, (batch_size, 1)),
+             w_input: w_input_val}
+# plt.plot(curve[:,0],curve[:,1],'b.',linewidth=0.5)
+plt.plot(curve[:,0],curve[:,1],linewidth=0.5)
+# plt.scatter(curve[0,0],curve[0,1])
+# plt.scatter(curve[-1,0],curve[-1,1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])

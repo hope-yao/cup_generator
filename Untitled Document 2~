@@ -1,0 +1,25 @@
+
+import matplotlib.pyplot as plt
+import seaborn
+plt.close('all')
+plt.figure()
+idx = -1
+bs_i = 0
+open_flg_val = sess.run(open_flg, feed_dict)
+for i,open_flg_i in enumerate(open_flg_val[bs_i]):
+    if open_flg_i< 0.5:
+        plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, i, 0], np.asarray(x_output_val_hist)[idx, bs_i, i, 1],'r.',linewidth=0.5)
+plt.plot(np.asarray(x_output_val_hist)[idx, bs_i, :, 0], np.asarray(x_output_val_hist)[idx, bs_i, :, 1],linewidth=0.5)
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, 0, 0], np.asarray(x_output_val_hist)[idx, bs_i, 0, 1])
+plt.scatter(np.asarray(x_output_val_hist)[idx, bs_i, -1, 0], np.asarray(x_output_val_hist)[idx, bs_i, -1, 1])
+axes = plt.gca()
+axes.set_xlim([0,1])
+axes.set_ylim([0,1])
+#################
+fig, ax1 = plt.subplots()
+ax1.plot(loss_bottom_val_hist,'b')
+ax1.plot(loss_area_val_hist,'g')
+ax1.plot(loss_height_val_hist,'r')
+ax1.set_ylabel('bottom_area_height', color='r')
+ax1.tick_params('y', colors='r')
+ax1.grid('off')

@@ -1,0 +1,4 @@
+np.mean(np.abs(sess.run(tf.gradients(loss['height'], WB['W1']),feed_dict)))
+
+
+sess.run([x_output[-1], open_flg[-1], loss, center_gravity, area_list], feed_dict)
