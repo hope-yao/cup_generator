@@ -9,14 +9,15 @@ class PolicyGradientREINFORCE(object):
                      policy_network,
                      state_dim,
                      num_actions,
-                     init_exp=0.5,         # initial exploration prob
+                     init_exp=0.1,         # initial exploration prob
                      final_exp=0.0,        # final exploration prob
                      anneal_steps=10000,   # N steps for annealing exploration
                      discount_factor=0.99, # discount future rewards
                      reg_param=0.001,      # regularization constants
                      max_gradient=5,       # max gradient norms
                      summary_writer=None,
-                     summary_every=100):
+                     summary_every=100,
+                     batch_size = None):
 
     # tensorflow machinery
     self.session        = session
@@ -32,7 +33,7 @@ class PolicyGradientREINFORCE(object):
     self.discount_factor = discount_factor
     self.max_gradient    = max_gradient
     self.reg_param       = reg_param
-
+    self.batch_size = batch_size
     # exploration parameters
     self.exploration  = init_exp
     self.init_exp     = init_exp
@@ -75,7 +76,7 @@ class PolicyGradientREINFORCE(object):
 
     with tf.name_scope("model_inputs"):
       # raw state representation
-      self.states = tf.placeholder(tf.float32, (None, self.state_dim), name="states")
+      self.states = tf.placeholder(tf.float32, (self.batch_size, self.state_dim), name="states")
 
     # rollout action based on current policy
     with tf.name_scope("predict_actions"):
@@ -87,7 +88,7 @@ class PolicyGradientREINFORCE(object):
       self.action_scores = tf.identity(self.policy_outputs, name="action_scores")
       # Note 1: tf.multinomial is not good enough to use yet
       # so we don't use self.predicted_actions for now
-      self.predicted_actions = tf.multinomial(self.action_scores, 1)
+      # self.predicted_actions = tf.multinomial(self.action_scores, 1)
 
     # regularization loss
     policy_network_variables = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="policy_network")
@@ -95,14 +96,14 @@ class PolicyGradientREINFORCE(object):
     # compute loss and gradients
     with tf.name_scope("compute_pg_gradients"):
       # gradients for selecting action from policy network
-      self.taken_actions = tf.placeholder(tf.int32, (None,), name="taken_actions")
-      self.discounted_rewards = tf.placeholder(tf.float32, (None,), name="discounted_rewards")
+      self.taken_actions = tf.placeholder(tf.float32, (self.batch_size,self.num_actions), name="taken_actions")
+      self.discounted_rewards = tf.placeholder(tf.float32, (self.batch_size,), name="discounted_rewards")
 
       with tf.variable_scope("policy_network", reuse=True):
         self.logprobs = self.policy_network(self.states)
 
       # compute policy loss and regularization loss
-      self.cross_entropy_loss = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.logprobs, labels=self.taken_actions)
+      self.cross_entropy_loss = tf.nn.sigmoid_cross_entropy_with_logits(logits=self.logprobs, labels=self.taken_actions)
       self.pg_loss            = tf.reduce_mean(self.cross_entropy_loss)
       self.reg_loss           = tf.reduce_sum([tf.reduce_sum(tf.square(x)) for x in policy_network_variables])
       self.loss               = self.pg_loss + self.reg_param * self.reg_loss
@@ -148,11 +149,13 @@ class PolicyGradientREINFORCE(object):
 
     # epsilon-greedy exploration strategy
     if random.random() < self.exploration:
-      return random.randint(0, self.num_actions-1)
+      # return random.randint(0, self.num_actions-1)
+      return np.asarray(np.random.randn(self.num_actions),'float32') #by Hope
     else:
       action_scores = self.session.run(self.action_scores, {self.states: states})[0]
-      action_probs  = softmax(action_scores) - 1e-5
-      action = np.argmax(np.random.multinomial(1, action_probs))
+      # action_probs  = softmax(action_scores) - 1e-5
+      # action = np.argmax(np.random.multinomial(1, action_probs))
+      action = tf.sigmoid(action_scores) # By Hope
       return action
 
   def updateModel(self):

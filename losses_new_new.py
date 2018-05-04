@@ -26,7 +26,7 @@ def get_loss_area(input_tensor, open_flg, sig_w=1.):
     '''only area below the opening'''
     import numpy as np
     bs = input_tensor.get_shape().as_list()[0]
-    level = tf.reduce_min((100*my_round(open_flg))+input_tensor[:, 1])
+    level = tf.reduce_min((100*open_flg)+input_tensor[:, 1])
     level = tf.reduce_min([level,0.8])
     below_level = tf.sigmoid(sig_w*(level - input_tensor[:, 1]))
 
@@ -71,7 +71,7 @@ def get_loss_range(input_tensor, open_flg):
 
     import numpy as np
     bs = input_tensor.get_shape().as_list()[0]
-    left_open_loc= tf.reduce_mean((1-my_round(open_flg))*input_tensor[:, 0])
+    left_open_loc= tf.reduce_mean((1-open_flg)*input_tensor[:, 0])
     range = center_gravity - left_open_loc
 
     loss_range = tf.abs(range-0.3)

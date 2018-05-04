@@ -49,7 +49,7 @@ def build_generator_new(z_input,t_input, WB):
 
     return x_output
 
-def build_generator_new_new(z_input,t_input, WB, sig_w=1.):
+def build_generator_new_new(z_input,t_input, WB, sig_w=1., act_function=tf.identity):
     '''x,y position and state'''
 
     W1, W2, W3, W4, W5, W6 = WB['W1'], WB['W2'], WB['W3'], WB['W4'], WB['W5'], WB['W6']
@@ -60,10 +60,10 @@ def build_generator_new_new(z_input,t_input, WB, sig_w=1.):
     h3 = tf.nn.relu(tf.matmul(h2, W3) + b3)
     h4 = tf.nn.relu(tf.matmul(h3, W4) + b4)
     h5 = tf.nn.relu(tf.matmul(h4, W5) + b5)
-    x_output = tf.nn.sigmoid(tf.matmul(h5, W6) + b6)[:,:2]
-    open_flg = tf.nn.sigmoid(sig_w * tf.matmul(h5, W6) + sig_w * b6)[:,2:]
+    x_output = act_function(tf.matmul(h5, W6) + b6)[:,:2]
+    open_flg = act_function(sig_w * tf.matmul(h5, W6) + sig_w * b6)[:,2:]
 
-    return tf.concat([x_output, open_flg],1)
+    return tf.concat([x_output, tf.round(open_flg)],1)
 
 def build_generator(z_input,t_input):
     h_dim_1,h_dim_2,h_dim_3,h_dim_4,h_dim_5=10,10,10,10,10
