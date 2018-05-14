@@ -7,11 +7,11 @@ from losses_new_new import *
 import numpy as np
 
 num_nodes = 16
-batch_size = 1
+batch_size = 32
 z_dim = 1
 t_dim = 1
 
-def generator(z_input, act_function=tf.identity):
+def generator(z_input, act_function=tf.identity, reuse=False):
     # z_input = tf.placeholder(tf.float32, shape=([batch_size, z_dim]))
     t_input = np.tile(np.linspace(0., 1., num_nodes), (batch_size, 1))#tf.placeholder(tf.float32, shape=([batch_size, num_nodes*t_dim]))
     sig_w = 1.#tf.placeholder(tf.float32, shape=([]))
@@ -30,45 +30,40 @@ def get_total_loss(sess,data):
     open_flg = state[:, :, 2]
     top_height = 0.8
     loss = {}
-    loss['range'] = tf.constant(0.)
-    loss['height'] = tf.constant(0.)
-    loss['bottom'] = tf.constant(0.)
-    loss['area'] = tf.constant(0.)
-    loss['open_flg'] = tf.constant(0.)
+    loss['range'] = []#tf.constant(0.)
+    loss['height'] = []#tf.constant(0.)
+    loss['bottom'] = []#tf.constant(0.)
+    loss['area'] = []#tf.constant(0.)
+    loss['open_flg'] = []#tf.constant(0.)
     # loss['edge'] = tf.constant(0.)
-    loss['stability'] = tf.constant(0.)
+    loss['stability'] = []#tf.constant(0.)
     for i in range(batch_size):
-        loss['height'] += get_loss_at_top(x_output[i], top_height) / batch_size
-        loss['bottom'] += get_loss_flat_bottom(x_output[i]) / batch_size
+        loss['height'] += [get_loss_at_top(x_output[i], top_height) / batch_size]
+        loss['bottom'] += [get_loss_flat_bottom(x_output[i]) / batch_size]
         # sig_w = tf.placeholder(tf.float32, shape=([]))
         sig_w = 1.
         loss_area, area_list = get_loss_area(x_output[i], open_flg, sig_w)
-        loss['area'] += loss_area / batch_size
-        loss['range'] += get_loss_range(x_output[i], open_flg) / batch_size
+        loss['area'] += [loss_area / batch_size]
+        loss['range'] += [get_loss_range(x_output[i], open_flg) / batch_size]
         # loss['curvature'] += get_loss_curvature_vs_length(x_output[i]) /batch_size
         # loss['edge'] += get_loss_sharp_edge(x_output[i]) /batch_size
         loss_stability, center_gravity = get_loss_stability(x_output[i])
-        loss['stability'] += loss_stability / batch_size
-        loss['open_flg'] += 0.  # tf.reduce_mean(0.5-tf.abs(open_flg-0.5))
+        loss['stability'] += [loss_stability / batch_size]
+        loss['open_flg'] += [0.]  # tf.reduce_mean(0.5-tf.abs(open_flg-0.5))
 
     # w_input = tf.placeholder(tf.float32, shape=([len(loss)]))
     w_input = [30, 10, 0, 0., 0., 0.]  # height, bottom, area, range, open, stability
-    total_loss = w_input[0] * loss['height'] \
-                 + w_input[1] * loss['bottom'] \
-                 + w_input[2] * loss['area'] \
-                 + w_input[3] * loss['range'] \
-                 + w_input[5] * loss['stability']
+    total_loss = w_input[0] * tf.reshape(loss['height'],(batch_size,1)) \
+                 + w_input[1] * tf.reshape(loss['bottom'],(batch_size,1))  \
+                 + w_input[2] * tf.reshape(loss['area'],(batch_size,1))  \
+                 + w_input[3] * tf.reshape(loss['range'],(batch_size,1))  \
+                 + w_input[5] * tf.reshape(loss['stability'],(batch_size,1))
     # + w_input[4] * loss['open_flg']\
 
     # w_input_val = [30, 10, 0, 0., 0., 0.]  # height, bottom, area, range, open, stability
     # sig_w_val = 1.
     # feed_dict = {w_input:w_input_val, sig_w:sig_w_val}
     return sess.run(total_loss)
-
-z_val = tf.placeholder(tf.float32, shape=([batch_size, z_dim]))
-data = generator(z_val, act_function=tf.sigmoid)
-x_output = tf.reshape(data,(batch_size,num_nodes,3))
-position, open_flg = x_output[:,:,:2], x_output[:,:,2]
 
 def plot_cup(position, open_flg):
     idx = 0
@@ -97,7 +92,7 @@ tfconfig = tf.ConfigProto(
 )
 tfconfig.gpu_options.allow_growth = True
 sess = tf.Session(config=tfconfig)
-optimizer = tf.train.RMSPropOptimizer(learning_rate=0.0001, decay=0.9)
+optimizer = tf.train.RMSPropOptimizer(learning_rate=0.00001, decay=0.9)
 
 #### main
 pg_reinforce = PolicyGradientREINFORCE(sess,
@@ -106,6 +101,12 @@ pg_reinforce = PolicyGradientREINFORCE(sess,
                                        z_dim,
                                        num_nodes*3,
                                        batch_size=batch_size)
+
+z_val = tf.placeholder(tf.float32, shape=([batch_size, z_dim]))
+data = generator(z_val, act_function=tf.sigmoid, reuse=True)
+x_output = tf.reshape(data,(batch_size,num_nodes,3))
+position, open_flg = x_output[:,:,:2], x_output[:,:,2]
+
 MAX_EPISODES = 1000
 MAX_STEPS    = 1
 episode_history = deque(maxlen=MAX_EPISODES)
@@ -115,17 +116,17 @@ for i_episode in range(MAX_EPISODES):
   total_rewards = 0
   for t in range(MAX_STEPS):
     action = pg_reinforce.sampleAction(state)
-    reward = get_total_loss(sess, action)
+    reward = -1 * get_total_loss(sess, action)
     total_rewards = reward
     pg_reinforce.storeRollout(state, action, reward)
   pg_reinforce.updateModel()
   episode_history.append(total_rewards)
-  mean_rewards = np.mean(episode_history)
+  mean_rewards = np.mean(episode_history,1)
 
 print('done')
 import matplotlib.pyplot as plt
 import seaborn
-plt.plot(episode_history)
+plt.plot(mean_rewards)
 
 feed_dict = {z_val: np.random.randn(batch_size, z_dim)}
 position_val, open_flg_val = sess.run([position, open_flg], feed_dict)
